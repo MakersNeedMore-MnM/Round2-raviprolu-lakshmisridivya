@@ -161,3 +161,14 @@ If implemented in clinical environments, MDR Sentinel could contribute to:
 # Future Work
 
 Future development will focus on integrating live hospital infrastructure, validating predictive AI models using anonymized healthcare datasets, implementing BLE communication, and deploying the system within a pilot hospital environment.
+
+---
+## Live Demo
+
+The prototype is available online and can be accessed using the link below:
+
+**https://rlakshmisridivya.github.io/MDR_SENTINEL/**
+
+This deployment demonstrates the current frontend prototype, user workflow, and interface of MDR Sentinel.
+
+---
