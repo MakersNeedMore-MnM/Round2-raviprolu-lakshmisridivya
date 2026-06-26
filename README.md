@@ -103,8 +103,8 @@ The proposed architecture consists of the following stages:
 ---
 
 # Project Structure
-
-```MDR-Sentinel/
+```
+MDR-Sentinel/
 │
 ├── src/
 │   ├── components/
@@ -116,7 +116,8 @@ The proposed architecture consists of the following stages:
 ├── package.json
 ├── vite.config.js
 ├── index.html
-└── README.md```
+└── README.md
+```
 
 # Prototype Status
 
