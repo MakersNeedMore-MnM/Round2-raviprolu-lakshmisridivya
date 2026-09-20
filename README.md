@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MDR Sentinel- AI-Powered Infection Surveillance and Early Outbreak Prediction Platform
 
 ## Abstract
@@ -172,3 +173,7 @@ The prototype is available online and can be accessed using the link below:
 This deployment demonstrates the current frontend prototype, user workflow, and interface of MDR Sentinel.
 
 ---
+=======
+# Round2-raviprolu-lakshmisridivya
+Repository for team raviprolu.lakshmisridivya for Round 2
+>>>>>>> a590f102741907c57fb746b35f35ea205132c425
