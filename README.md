@@ -357,6 +357,8 @@ The deployment demonstrates the current:
 * What-If Simulator
 * Digital Twin visualization
 
+Technical Architecture: [View Diagram](https://drive.google.com/file/d/1NfebXkZAHFDG96tm7Q0M2ap5c1RMRGxF/view?usp=sharing)
+Process Flow Explanation: [Click to listen to the explanation](https://drive.google.com/file/d/1BUvGcr0DAOO2yy3FhV_DrQ_O-a4K4Ldf/view?usp=sharing)
 ---
 
 # Project Status
