@@ -365,6 +365,7 @@ Validate the platform in a controlled hospital environment with appropriate priv
 Developed as part of the hackathon Round 2 submission.
 
 > Member 1: Raviprolu Lakshmi Sri Divya
+
 > Member 2: Sai Susmitha B
 ---
 
