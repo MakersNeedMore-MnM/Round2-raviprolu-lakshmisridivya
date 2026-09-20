@@ -1,4 +1,6 @@
-# MDR Sentinel — AI-Powered Infection Surveillance & Early Outbreak Prediction
+# MDR Sentinel — AI-Powered Infection Surveillance & Early Outbreak Prediction System
+
+## Project Overview
 
 **MDR Sentinel** is a proposed AI-powered infection surveillance and decision-support platform designed to help hospitals monitor **Multi-Drug Resistant (MDR) infections**, identify potential exposure risks, and support earlier outbreak response.
 
@@ -9,21 +11,9 @@ The platform combines **Bluetooth Low Energy (BLE), IoT, Artificial Intelligence
 
 ---
 
-## Overview
-
-Hospital-acquired MDR infections remain a significant challenge for healthcare systems. Traditional infection-control workflows often depend on laboratory confirmation, manual contact tracing, and retrospective investigation.
-
-These processes can make it difficult for infection-control teams to identify potential transmission patterns early.
-
-**MDR Sentinel** proposes a proactive approach by combining real-time location and interaction data with AI-assisted risk assessment and graph-based transmission analysis.
-
-The goal is not to replace existing hospital systems, but to provide an **additional intelligence layer** that helps healthcare professionals understand potential infection risks and respond more efficiently.
-
----
-
 ## Problem Statement
 
-Current hospital infection-monitoring systems may rely heavily on:
+Hospital-acquired MDR infections remain a significant challenge for healthcare systems. Traditional infection-control workflows often depend on:
 
 * Delayed laboratory reports
 * Manual contact tracing
@@ -31,13 +21,13 @@ Current hospital infection-monitoring systems may rely heavily on:
 * Fragmented patient and environmental information
 * Limited visibility into real-time movement and interactions
 
-As a result, actionable information may become available only after potential transmission has already occurred.
+These limitations can make it difficult for infection-control teams to identify potential transmission patterns early.
 
 ### The Need
 
-Hospitals need a system capable of providing:
+Hospitals need a system capable of supporting the following workflow:
 
-**Real-time monitoring → Exposure analysis → Risk assessment → Transmission visualization → Early response**
+**Real-Time Monitoring → Exposure Analysis → Risk Assessment → Transmission Visualization → Early Response**
 
 MDR Sentinel is designed around this workflow.
 
@@ -45,9 +35,11 @@ MDR Sentinel is designed around this workflow.
 
 ## Proposed Solution
 
-MDR Sentinel is an intelligent decision-support platform that combines hospital activity data, exposure analysis, and AI-driven risk assessment.
+MDR Sentinel provides an additional intelligence layer over existing hospital systems by combining real-time activity data, exposure analysis, AI-assisted risk assessment, and graph-based transmission analysis.
 
-### Core Workflow
+The system is intended to support healthcare professionals rather than replace existing clinical systems or human decision-making.
+
+### End-to-End System Workflow
 
 ```text
 BLE Tags & Sensors
@@ -65,17 +57,6 @@ Digital Twin Visualization
 Risk Alerts & Decision Support
 ```
 
-The proposed platform includes:
-
-* **BLE-based indoor location tracking**
-* **Continuous interaction monitoring**
-* **Automated exposure analysis**
-* **AI-assisted infection risk assessment**
-* **Graph-based transmission mapping**
-* **Digital Twin visualization**
-* **Real-time risk notifications**
-* **Role-based dashboards**
-
 ---
 
 # Key Features
@@ -90,11 +71,9 @@ Dedicated interfaces for different hospital stakeholders, including:
 
 Each role can access information relevant to its responsibilities.
 
----
-
 ## 2. AI Prediction Interface
 
-Provides an interface for estimating potential infection risk based on factors such as:
+Provides an interface for estimating potential infection risk using factors such as:
 
 * Exposure patterns
 * Patient interactions
@@ -104,36 +83,26 @@ Provides an interface for estimating potential infection risk based on factors s
 
 The AI component is intended to support clinical decision-making rather than replace healthcare professionals.
 
----
-
 ## 3. Infection Replay Engine
 
 Allows infection-control teams to review historical movement and interaction patterns.
 
 The proposed system can reconstruct potential exposure sequences and visualize how an infection cluster may have developed.
 
----
-
 ## 4. What-If Simulation
 
-Enables users to explore hypothetical intervention scenarios.
-
-Examples include:
+Enables users to explore hypothetical intervention scenarios, including:
 
 * Restricting access to an area
 * Changing patient movement patterns
 * Increasing isolation measures
 * Modifying infection-control interventions
 
-This can help teams evaluate potential strategies before implementation.
-
----
+This allows teams to explore potential responses before implementation.
 
 ## 5. Digital Twin
 
-Provides a visual representation of hospital activity.
-
-The Digital Twin is designed to display:
+Provides a visual representation of hospital activity, including:
 
 * Patient locations
 * Healthcare-worker movement
@@ -141,17 +110,19 @@ The Digital Twin is designed to display:
 * High-risk areas
 * Potential transmission clusters
 
----
-
 ## 6. Environmental Hygiene Monitoring
 
-The prototype includes an **Environmental Hygiene Score** visualization to represent the cleanliness and potential risk level of monitored hospital areas.
+The prototype includes an **Environmental Hygiene Score** visualization representing the cleanliness and potential risk level of monitored hospital areas.
+
+## 7. Risk Alerts & Decision Support
+
+The proposed system can generate notifications when predefined risk thresholds are reached, helping relevant infection-control personnel identify situations requiring attention.
 
 ---
 
 # System Architecture
 
-The proposed system follows a multi-layer architecture.
+MDR Sentinel follows a multi-layer architecture.
 
 ### 1. Data Collection
 
@@ -191,11 +162,11 @@ A graph database can represent:
 * Interactions
 * Exposure events
 
-This allows potential transmission chains and infection clusters to be identified.
+This enables analysis of potential transmission chains and infection clusters.
 
 ### 6. Digital Twin
 
-The processed information is visualized through a Digital Twin representation of the hospital environment.
+Processed information is visualized through a Digital Twin representation of the hospital environment.
 
 ### 7. Alerts & Decision Support
 
@@ -205,46 +176,25 @@ When predefined risk thresholds are reached, the system can generate notificatio
 
 # Technology Stack
 
-## Frontend
-
-| Technology | Purpose             |
-| ---------- | ------------------- |
-| React.js   | User interface      |
-| Vite       | Frontend build tool |
-| JavaScript | Application logic   |
-| HTML5      | Structure           |
-| CSS3       | Styling             |
-
-## Proposed Backend
-
-| Technology | Purpose               |
-| ---------- | --------------------- |
-| Node.js    | Backend runtime       |
-| NestJS     | Backend framework     |
-| REST APIs  | Service communication |
-| MQTT       | IoT messaging         |
-
-## Databases
-
-| Technology | Purpose                                           |
-| ---------- | ------------------------------------------------- |
-| MongoDB    | Structured application and hospital data          |
-| Neo4j      | Graph-based interaction and transmission analysis |
-
-## Artificial Intelligence
-
-| Technology   | Purpose                       |
-| ------------ | ----------------------------- |
-| Python       | AI/ML development             |
-| FastAPI      | ML service API                |
-| Scikit-learn | Machine-learning models       |
-| XGBoost      | Predictive modeling           |
-| MLflow       | Model tracking and management |
-
-## IoT
-
-* Bluetooth Low Energy (BLE)
-* BLE Receivers / Sensors
+| Category            | Technology                 | Purpose                                  |
+| ------------------- | -------------------------- | ---------------------------------------- |
+| Frontend            | React.js                   | User interface                           |
+| Frontend            | Vite                       | Frontend build tool                      |
+| Frontend            | JavaScript                 | Application logic                        |
+| Frontend            | HTML5                      | Structure                                |
+| Frontend            | CSS3                       | Styling                                  |
+| Backend             | Node.js                    | Backend runtime                          |
+| Backend             | NestJS                     | Backend framework                        |
+| Communication       | REST APIs                  | Service communication                    |
+| IoT Messaging       | MQTT                       | IoT messaging                            |
+| Database            | MongoDB                    | Structured application and hospital data |
+| Graph Database      | Neo4j                      | Interaction and transmission analysis    |
+| AI/ML               | Python                     | AI/ML development                        |
+| AI/ML API           | FastAPI                    | ML service API                           |
+| Machine Learning    | Scikit-learn               | Machine-learning models                  |
+| Predictive Modeling | XGBoost                    | Predictive modeling                      |
+| MLOps               | MLflow                     | Model tracking and management            |
+| IoT                 | Bluetooth Low Energy (BLE) | Indoor location and proximity tracking   |
 
 ---
 
@@ -268,11 +218,50 @@ MDR-Sentinel/
 
 ---
 
+# How to Run / Use the Project
+
+## Online Demo
+
+The current interactive frontend prototype is available online:
+
+**Launch MDR Sentinel:**
+https://rlakshmisridivya.github.io/MDR_SENTINEL/
+
+The deployed prototype demonstrates:
+
+* Frontend interface
+* Role-based navigation
+* AI Prediction prototype
+* Infection Replay Engine
+* What-If Simulator
+* Digital Twin visualization
+* User workflow
+
+## Local Setup
+
+> **Note:** Local installation and execution commands are not currently documented in the project source. The repository should include the verified commands from `package.json` before submission.
+
+Once the verified commands are available, this section should follow the standard format:
+
+```bash
+# Install dependencies
+<verified-install-command>
+
+# Start development server
+<verified-run-command>
+```
+
+Then open the local development URL provided by the Vite development server.
+
+---
+
 # Prototype Status
+
+### Currently Implemented
 
 The current repository contains the **interactive frontend prototype and conceptual system architecture** developed during the hackathon.
 
-## Implemented
+Implemented components include:
 
 * Interactive user interface
 * Role-based dashboards
@@ -284,7 +273,9 @@ The current repository contains the **interactive frontend prototype and concept
 * User workflow and navigation
 * Interactive prototype demonstrating the proposed system
 
-## Planned
+### Planned
+
+The following components are planned for future development:
 
 * BLE hardware integration
 * Backend APIs
@@ -294,6 +285,27 @@ The current repository contains the **interactive frontend prototype and concept
 * Real-time data streaming
 * Hospital Information System integration
 * Pilot deployment and validation
+
+---
+
+# Demo & Supporting Materials
+
+### Live Prototype
+
+**MDR Sentinel:**
+https://rlakshmisridivya.github.io/MDR_SENTINEL/
+
+### Technical Architecture
+
+**View Architecture Diagram:**
+https://drive.google.com/file/d/1NfebXkZAHFDG96tm7Q0M2ap5c1RMRGxF/view?usp=sharing
+
+### Process Flow Explanation
+
+**Listen to the Process Flow Explanation:**
+https://drive.google.com/file/d/1BUvGcr0DAOO2yy3FhV_DrQ_O-a4K4Ldf/view?usp=sharing
+
+The supporting materials demonstrate the proposed system architecture and end-to-end workflow.
 
 ---
 
@@ -316,49 +328,44 @@ If implemented and clinically validated, MDR Sentinel is intended to support:
 
 Future development will focus on moving from the current prototype toward a validated clinical decision-support system.
 
-Key areas include:
+### 1. BLE Infrastructure Integration
 
-1. **BLE Infrastructure Integration**
-   Integrate physical BLE tags and receivers for real-time indoor positioning and proximity detection.
+Integrate physical BLE tags and receivers for real-time indoor positioning and proximity detection.
 
-2. **Backend Development**
-   Implement production-ready APIs and data-processing services.
+### 2. Backend Development
 
-3. **Graph-Based Analytics**
-   Deploy Neo4j for large-scale interaction and exposure analysis.
+Implement production-ready APIs and data-processing services.
 
-4. **AI Model Development**
-   Train and validate predictive models using appropriately anonymized healthcare datasets.
+### 3. Graph-Based Analytics
 
-5. **Real-Time Streaming**
-   Introduce real-time event processing for continuous monitoring.
+Deploy Neo4j for large-scale interaction and exposure analysis.
 
-6. **Hospital System Integration**
-   Explore interoperability with existing Hospital Information Systems and healthcare data standards.
+### 4. AI Model Development
 
-7. **Pilot Deployment**
-   Validate the platform in a controlled hospital environment with appropriate privacy, security, and clinical governance.
+Train and validate predictive models using appropriately anonymized healthcare datasets.
+
+### 5. Real-Time Streaming
+
+Introduce real-time event processing for continuous monitoring.
+
+### 6. Hospital System Integration
+
+Explore interoperability with existing Hospital Information Systems and healthcare data standards.
+
+### 7. Pilot Deployment
+
+Validate the platform in a controlled hospital environment with appropriate privacy, security, and clinical governance.
 
 ---
 
-# Live Demo
+# Team
 
-The current frontend prototype is available online:
+**Round 2 — Team raviprolu.lakshmisridivya**
 
-**[Launch MDR Sentinel](https://rlakshmisridivya.github.io/MDR_SENTINEL/)**
+Developed as part of the hackathon Round 2 submission.
 
-The deployment demonstrates the current:
-
-* Frontend interface
-* User workflow
-* Role-based navigation
-* AI Prediction prototype
-* Infection Replay Engine
-* What-If Simulator
-* Digital Twin visualization
-
-Technical Architecture: [View Diagram](https://drive.google.com/file/d/1NfebXkZAHFDG96tm7Q0M2ap5c1RMRGxF/view?usp=sharing)
-Process Flow Explanation: [Click to listen to the explanation](https://drive.google.com/file/d/1BUvGcr0DAOO2yy3FhV_DrQ_O-a4K4Ldf/view?usp=sharing)
+> Member 1: Raviprolu Lakshmi Sri Divya
+> Member 2: Sai Susmitha B
 ---
 
 # Project Status
@@ -369,15 +376,7 @@ MDR Sentinel is currently a hackathon-developed prototype. The backend infrastru
 
 ---
 
-## Team
-
-**Round 2 — Team raviprolu.lakshmisridivya**
-
-Developed as part of the hackathon Round 2 submission.
-
----
-
-## Disclaimer
+# Disclaimer
 
 MDR Sentinel is a **proposed healthcare technology concept and prototype**. It is not currently a clinically validated medical device or diagnostic system.
 
